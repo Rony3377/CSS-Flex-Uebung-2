@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS, Flex, Übung</title>
+    <style>
+      img {
+        max-width: 120px;
+        max-height: 120px;
+        margin: 10px;
+        border-width: 6px;
+        border-style: groove;
+        border-color: aquamarine;
+      }
+      /* von links */
+      .a {
+        display: flex; /*pringt deninthalt zum fließen*/
+        justify-content: flex-start; /*steurt den flus auf der flex achse*/
+        flex-wrap: wrap; /*brechne auf nächste ziele*/
+      }
+      /* von rechts */
+      .b {
+        display: flex; /*pringt deninthalt zum fließen*/
+        justify-content: flex-end; /*steurt den flus auf der flex achse*/
+        flex-wrap: wrap; /*brechne auf nächste ziele*/
+      }
+
+      /* durch gestreckt */
+      .c {
+        display: flex; /*pringt deninthalt zum fließen*/
+        justify-content: space-between; /*steurt den flus auf der flex achse*/
+        flex-wrap: wrap; /*brechne auf nächste ziele*/
+      }
+
+      /* teil gestreckt */
+      .d {
+        display: flex; /*pringt deninthalt zum fließen*/
+        justify-content: space-around; /*steurt den flus auf der flex achse*/
+        flex-wrap: wrap; /*brechne auf nächste ziele*/
+      }
+      /* mittig */
+      .e {
+        display: flex; /*pringt deninthalt zum fließen*/
+        justify-content: center; /*steurt den flus auf der flex achse*/
+        flex-wrap: wrap; /*brechne auf nächste ziele*/
+      }
+    </style>
+  </head>
+  <body>
+    <!-- In jede Div mindestens 5 Bilder !! -->
+    <h3>Von Links</h3>
+    <div class="a">
+      <img src="ss.png" alt="" />
+      <img src="sa.png" alt="" />
+      <img src="sb.png" alt="" />
+      <img src="sc.png" alt="" />
+      <img src="sd.png" alt="" />
+    </div>
+    <h3>Von Rechts</h3>
+    <div class="b">
+      <img src="ss.png" alt="" />
+      <img src="sf.png" alt="" />
+      <img src="sg.png" alt="" />
+      <img src="ss.png" alt="" />
+      <img src="sr.png" alt="" />
+    </div>
+    <h3>Durch gestreckt</h3>
+    <div class="c">
+      <img src="sg.png" alt="" />
+      <img src="ss.png" alt="" />
+      <img src="sa.png" alt="" />
+      <img src="ss.png" alt="" />
+      <img src="sh.png" alt="" />
+    </div>
+    <h3>Teil gestreckt</h3>
+    <div class="d">
+      <img src="sf.png" alt="" />
+      <img src="sb.png" alt="" />
+      <img src="ss.png" alt="" />
+      <img src="sc.png" alt="" />
+      <img src="sr.png" alt="" />
+    </div>
+    <h3>Mittig</h3>
+    <div class="e">
+      <img src="ss.png" alt="" />
+      <img src="sr.png" alt="" />
+      <img src="sf.png" alt="" />
+      <img src="ss.png" alt="" />
+      <img src="sh.png" alt="" />
+    </div>
+  </body>
+</html>
